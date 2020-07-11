@@ -8,7 +8,9 @@ You are seeing the documentation for the parent module for the Karumi App servic
 ## Project structure and details
 
 This is a Maven module. This module contains two sub-modules:
+
     - KarumiAppAcceptanceTests: The acceptance tests for the Karumi App service
+    
     - KarumiAppService: The actual code and business logic for the Karumi App
 
 Documentation for each of those can be found in their respective README files.
