@@ -8,8 +8,53 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+    </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>exec-maven-plugin</artifactId>
+                <groupId>org.codehaus.mojo</groupId>
+                <executions>
+                    <execution>
+                        <id>run-service</id>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <async>true</async>
+                            <executable>javaw</executable>
+                            <arguments>
+                                <argument>-jar</argument>
+                                <argument>${basedir}/../KarumiAppService//target/KarumiAppService-${project.version}.jar</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>wait-for-service</id>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <executable>sleep</executable>
+                            <arguments>
+                                <argument>7s</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
 
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
     <artifactId>KarumiAppAcceptanceTests</artifactId>
 
