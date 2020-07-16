@@ -167,9 +167,6 @@ public class WebClient {
 				.addHeader("Sec-Fetch-User", "?1")
 				.addHeader("Sec-Fetch-Dest", "document")
 				.build();
-		log.info("---------------------------------------------------");
-		log.info("Request to authenticate: ");
-		log.info(request.toString());
 		return client.newCall(request).execute();
 	}
 
@@ -192,9 +189,6 @@ public class WebClient {
 				.addHeader("Sec-Fetch-User", "?1")
 				.addHeader("Sec-Fetch-Dest", "document")
 				.build();
-		log.info("---------------------------------------------------");
-		log.info("Request to authenticate: ");
-		log.info(request.toString());
 		return client.newCall(request).execute();
 	}
 

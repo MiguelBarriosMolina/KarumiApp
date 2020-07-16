@@ -6,18 +6,19 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.6.RELEASE</version>
-		<relativePath />
 	</parent>
-	<artifactId>KarumiAppService</artifactId>
+
+	<artifactId>karumi-app-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>KarumiAppService</name>
-	<description>Demo project for Karumi job application</description>
+	<description>Demo project for Karumi application</description>
+    <name>KarumiAppService</name>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
