@@ -1,0 +1,148 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Karumi</title>
+</head>
+
+<style>
+
+    .login-card{
+        margin-top: 10%;
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-bottom: 10%;
+        border:2px solid lightgray;
+        border-radius: 5pt;
+    }
+
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+    }
+
+    .logo{
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+        margin-top: 30pt;
+        margin-bottom: 40pt;
+
+    }
+
+    .stylized-textbox{
+        border-color: lightgray;
+        border-radius: 3pt;
+        margin-bottom: 5pt;
+        padding-left: 7pt;
+    }
+
+    .login-button{
+        background-color: #217AF0;
+        border-radius: 3pt;
+        border-style: none;
+        color: white;
+        padding-top: 5pt;
+        padding-bottom: 5pt;
+        margin-top: 20pt;
+        margin-bottom: 50pt;
+    }
+
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: lightgray;
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: lightgray;
+    }
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+      color: lightgray;
+    }
+
+
+    input[type=text], textarea {
+        transition: all 0.30s ease-in-out;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        padding-left: 7pt;
+        border: 1px solid #DDDDDD;
+    }
+        
+    input[type=text]:focus, textarea:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        padding: 3px 0px 3px 3px;
+        padding-left: 7pt;
+
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+
+    
+    input[type=password], textarea {
+        transition: all 0.30s ease-in-out;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        padding: 3px 0px 3px 3px;
+        padding-left: 7pt;
+        border: 1px solid #DDDDDD;
+        }
+        
+    input[type=password]:focus, textarea:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        padding: 3px 0px 3px 3px;
+        padding-left: 7pt;
+
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+    
+</style>
+
+<body class="body-bg">
+<main>
+    <div class="login-card">
+        <div class="logo">
+            <img src='http://nosleepclub.es/karumi_logo.png' class="logo" alt="Karumi logo">
+        </div>
+
+        <form th:action="@{/login}" method="post">
+            <table class="center">
+                <tr>
+                    <td><input  class="center stylized-textbox textbox-username" name="username" type="text" placeholder="Username"></td>
+                </tr>
+                <tr>
+                    <td><input  class="center stylized-textbox textbox-password" name="password" type="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="center login-button" id="login-button" value="Log in"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</main>
+</body>
+<footer>
+    <!-- TODO Add a footer with "What is this" button and popup - Issue #8 -->
+</footer>
+<script>
+
+
+</script>
+
+</html>
