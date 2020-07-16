@@ -53,11 +53,10 @@ Clicking on the logout button will redirect the user to the login page.
 The credentials for log in are:
 
 username: testuser
+
 password: zXCQA!Bf
 
-This credentials should NOT be here. The only reason they can be part of this README file or
-a github repository in general is because at the moment they only give you permission to see one page with
-no information. Any further development will require removing them from here and properly storing and sharing them with users.
+These credentials will be removed from here at a later date. The only reason they can be part of this README file or a github repository in general is because at the moment they only give you permission to see one page that contains no information whatsoever. Any further development will require removing them from here and properly storing in a secure place and sharing them with users, or creating a sign up form. 
 
 ## Tests
 
