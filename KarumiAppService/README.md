@@ -32,6 +32,10 @@ If you are located at the root of this project:
 The "mvn clean install" command will also add a copy of this jar file to your local '.m2/repository/Karumi' folder.
 You can also execute the program using that jar file.
 
+## IDE and environment configuration
+
+This project uses Lombok as a helpful tool to reduce boilerplate code. Some IDEs might have trouble processing the Lombok annotations out of the box. If the project does not compile in your IDE, please install any Lombok plugin and enable annotation processing.
+
 ## Usage and navigation
 
 Once the program is running, you can visit the page at:
