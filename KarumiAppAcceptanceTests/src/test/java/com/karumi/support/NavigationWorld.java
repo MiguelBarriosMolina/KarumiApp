@@ -38,7 +38,6 @@ public class NavigationWorld {
     private Response lastAuthenticateResponse;
 
     public Optional<Cookie> getSessionCookie(){
-        log.info("Returning session id for call: " + lastSessionId);
         if(lastSessionId != null){
             return Optional.of(new Cookie.Builder("JSESSIONID", lastSessionId).build());
         }
@@ -48,12 +47,10 @@ public class NavigationWorld {
 
     public void updateSessionId(Response response) {
         String setCookieHeader = response.headers().get("Set-Cookie");
-        log.info("Updating cookie header with: " + setCookieHeader);
         if(setCookieHeader != null) {
            Arrays.stream(setCookieHeader.split(";"))
             .filter(s -> s.contains("JSESSIONID")).findAny().ifPresent(this::setLastSessionId);
            this.lastSessionId = lastSessionId.replace("JSESSIONID=", "");
-           log.info("New cookie id: " + lastSessionId);
         }
     }
 

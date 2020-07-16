@@ -32,7 +32,6 @@ public class KarumiAppService {
 
     public void getLanding() throws IOException {
         if(navigationWorld.getSessionCookie().isPresent()){
-            log.info("getting landing  page with cookie");
             navigationWorld.setLastGetPageResponse(webClient.getMainPage(navigationWorld.getSessionCookie().get()));
         }else{
             navigationWorld.setLastGetPageResponse(webClient.getMainPage());
