@@ -10,7 +10,7 @@ This folder contains two projects:
 
 Documentation for each of those can be found in their respective README files.
 
-Notes:
+## Notes:
 
 This is a mockup for a full back-end service. Any implementation found here should not be considered final.
 
