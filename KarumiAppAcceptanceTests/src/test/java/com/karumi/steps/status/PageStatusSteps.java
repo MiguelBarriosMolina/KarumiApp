@@ -7,6 +7,8 @@ import cucumber.api.java.en.Given;
 import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.IOException;
+
 
 public class PageStatusSteps  {
 
@@ -20,9 +22,10 @@ public class PageStatusSteps  {
     }
 
     @Given("the web page is up and running")
-    public void givenPageIsUpAndRunning(){
+    public void givenPageIsUpAndRunning() throws IOException {
+        navigationWorld.clear();
         karumiAppService.getLoginPage();
-        Assert.assertNotEquals(navigationWorld.getLastGetPageResponse().getStatusCode(), 404);
+        Assert.assertNotEquals(navigationWorld.getLastGetPageResponse().code(), 404);
     }
 
 }
