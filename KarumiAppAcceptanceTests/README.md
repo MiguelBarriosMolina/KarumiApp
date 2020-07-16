@@ -15,9 +15,13 @@ You can find instructions to run it in its README file
 
 You can run the whole test suite using the following command:
 
-> mvn clean install
+> mvn test
 
 Any maven build of this module will also run the whole acceptance test suite.
+Running this module automatically deploys the service from Jar file located in KarumiAppService/target/
+The build will fail if the jar is not present, but it is auto generated on building the KarumiAppService module or the parent module.
+
+
 
 ## Notes
 
