@@ -12,23 +12,11 @@ Feature: Navigate web page
     Then I am redirected to the log in page
     And I cannot visit any other page
 
-#  Scenario: Log in
-#    Given the web page is up and running
-#    And I am not authenticated
-#    When I submit the correct credentials
-#    Then I am redirected to the landing page
-
   Scenario: Invalid log in
     Given the web page is up and running
     And I am not authenticated
     When I submit incorrect credentials
     Then I am redirected to the log in page
-
-#  Scenario: Page not found
-#    Given the web page is up and running
-#    And I am authenticated
-#    When I visit a page that does not exist
-#    Then I am redirected to the error page
 
   Scenario: Log out
     Given the web page is up and running
