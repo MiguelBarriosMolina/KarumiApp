@@ -1,0 +1,101 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Karumi</title>
+</head>
+
+
+<style>
+
+    header{
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    .main-resource{
+        margin-top: 3%;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20%;
+        border:2px solid lightgray;
+        border-radius: 5pt;
+    }
+
+    .logo{
+        float: left;
+        padding-left: 15pt;
+        width: 100px;
+        height: 100px;
+        margin-top: 30pt;
+    }
+
+    .logout-button{
+        float: right;
+        background-color: #217AF0;
+        border-radius: 3pt;
+        border-style: none;
+        color: white;
+        padding-top: 15pt;
+        padding-bottom: 15pt;
+        padding-right: 15pt;
+        padding-left: 15pt;
+        margin-right: 60pt;
+        margin-top: 20pt;
+        margin-bottom: 50pt;
+    }
+
+    h1{
+        padding-left: 10%;
+        padding-top: 6%;
+        padding-bottom: 40pt;
+    }
+    h2{
+        color: #494949;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 50pt;
+    }
+    .sticky + .main-resource {
+        padding-top: 60px;
+    }
+
+</style>
+
+<body class="body-bg">
+<header id="header">
+    <div class="navigation-controls sticky">
+        <img src='http://nosleepclub.es/karumi_logo.png' class="logo">
+        <form th:action="@{/logout}" method="post">
+            <input class="logout-button" type="submit" value="Logout"/>
+        </form>
+    </div>
+</header>
+<main>
+    <div class="main-resource">
+        <div>
+            <h1><b>Lorem ipsum</b></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo in vitae turpis massa. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Purus in massa tempor nec feugiat nisl pretium. Lacus sed turpis tincidunt id aliquet. Dui nunc mattis enim ut tellus elementum. Tellus cras adipiscing enim eu turpis egestas pretium. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Ornare lectus sit amet est placerat in egestas erat. Malesuada nunc vel risus commodo.
+                <br/><br/>
+                Nibh mauris cursus mattis molestie a iaculis. Viverra nam libero justo laoreet sit amet cursus. Feugiat nisl pretium fusce id. Vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Volutpat lacus laoreet non curabitur. Nunc vel risus commodo viverra maecenas accumsan. Id semper risus in hendrerit gravida rutrum quisque non tellus. Enim neque volutpat ac tincidunt vitae. Tellus pellentesque eu tincidunt tortor aliquam. Consectetur a erat nam at lectus urna. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Bibendum ut tristique et egestas quis.
+                <br/><br/>
+                Vitae tempus quam pellentesque nec nam aliquam sem et. Nec sagittis aliquam malesuada bibendum. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Est sit amet facilisis magna. Odio morbi quis commodo odio aenean sed adipiscing. Mus mauris vitae ultricies leo integer malesuada. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Congue quisque egestas diam in arcu cursus. Ullamcorper eget nulla facilisi etiam dignissim diam. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Netus et malesuada fames ac. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Sed id semper risus in hendrerit. Vulputate mi sit amet mauris commodo quis.
+                <br/><br/>
+                Lectus sit amet est placerat. Cras tincidunt lobortis feugiat vivamus at augue eget. Est pellentesque elit ullamcorper dignissim cras. Lobortis elementum nibh tellus molestie nunc non blandit massa. Mi ipsum faucibus vitae aliquet. Interdum consectetur libero id faucibus nisl tincidunt eget. Gravida neque convallis a cras semper auctor. Sit amet massa vitae tortor condimentum lacinia quis vel. Mauris a diam maecenas sed enim. Arcu odio ut sem nulla pharetra diam sit. Nunc eget lorem dolor sed viverra ipsum nunc. Tempus quam pellentesque nec nam. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Semper risus in hendrerit gravida. In mollis nunc sed id semper risus. Leo vel orci porta non pulvinar neque laoreet suspendisse. At volutpat diam ut venenatis tellus in metus. Viverra suspendisse potenti nullam ac tortor vitae purus. Nisi scelerisque eu ultrices vitae auctor eu augue ut.
+                <br/><br/>
+                Mattis nunc sed blandit libero volutpat. Pharetra et ultrices neque ornare aenean euismod. Aliquet sagittis id consectetur purus ut faucibus. Ipsum a arcu cursus vitae congue mauris rhoncus. Adipiscing elit ut aliquam purus sit. At in tellus integer feugiat scelerisque varius morbi enim. Volutpat odio facilisis mauris sit amet massa vitae. Sed viverra tellus in hac habitasse. Vitae turpis massa sed elementum tempus egestas sed. Ac turpis egestas maecenas pharetra convallis. Cum sociis natoque penatibus et magnis dis parturient. Facilisi etiam dignissim diam quis enim lobortis. Ut faucibus pulvinar elementum integer enim neque volutpat. Ac turpis egestas sed tempus. At quis risus sed vulputate. Nec nam aliquam sem et tortor consequat id. Morbi tristique senectus et netus et malesuada fames ac turpis. Arcu ac tortor dignissim convallis aenean et. Tristique senectus et netus et malesuada.</h2>
+        </div>
+    </div>
+</main>
+</body>
+<footer>
+    <!-- TODO Add a footer with "What is this" button and popup - Issue #8 -->
+</footer>
+<script>
+
+</script>
+
+</html>
