@@ -122,17 +122,11 @@
         </div>
 
         <form th:action="@{/login}" method="post">
-            <table class="center">
-                <tr>
-                    <td><input  class="center stylized-textbox textbox-username" name="username" type="text" placeholder="Username"></td>
-                </tr>
-                <tr>
-                    <td><input  class="center stylized-textbox textbox-password" name="password" type="password" placeholder="Password"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" class="center login-button" id="login-button" value="Log in"></td>
-                </tr>
-            </table>
+            <div class="center">
+                <input  class="center stylized-textbox textbox-username" name="username" type="text" placeholder="Username">
+                <input  class="center stylized-textbox textbox-password" name="password" type="password" placeholder="Password">
+                <input type="submit" class="center login-button" id="login-button" value="Log in">
+            </div>
         </form>
     </div>
 </main>
